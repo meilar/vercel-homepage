@@ -1,3 +1,5 @@
+import classNames from "classnames";
+import RootHeader from "./components/RootHeader";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -15,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={classNames(inter.className, "bg-white")}>
+        <RootHeader />
+        <>{children}</>
+      </body>
     </html>
   );
 }
