@@ -4,7 +4,7 @@ import RootLayout from "./layout";
 export default function Homepage() {
   return (
     <main>
-      <RootLayout url="/">
+      <RootLayout>
         <Carousel
           sx="mt-12 mr-auto ml-auto max-h-1/2"
           carouselItems={[

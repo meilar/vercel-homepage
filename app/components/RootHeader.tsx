@@ -3,10 +3,6 @@ import logo from "../../public/logo.svg";
 import Link from "next/link";
 import classNames from "classnames";
 
-interface Props {
-  url: string;
-}
-
 const navLinks = [
   {
     displayText: "Bio",
@@ -26,19 +22,14 @@ const navLinks = [
   },
 ];
 
-export default function RootHeader({ url }: Props) {
+export default function RootHeader() {
   return (
     <div className="py-8 px-4">
       <div className="flex flex-row align-center justify-start items-center gap-8">
         <div className="w-48" />
         <Image height={128} width={128} src={logo} alt={"Test"} />
         <Link
-          className={classNames(
-            "text-2xl hover:text-purple-600",
-            url === "/"
-              ? "underline-offset-2 underline font-bold"
-              : "font-semibold"
-          )}
+          className={classNames("text-2xl hover:text-purple-600 font-semibold")}
           href={"/"}
         >
           Matthew Eilar
@@ -46,10 +37,7 @@ export default function RootHeader({ url }: Props) {
         {navLinks.map((x) => {
           return (
             <Link
-              className={classNames(
-                "text-lg hover:text-purple-600",
-                x.page === url ? "underline-offset-2 underline font-bold" : ""
-              )}
+              className={classNames("text-lg hover:text-purple-600")}
               href={x.page}
             >
               {x.displayText}
