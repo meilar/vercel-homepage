@@ -1,5 +1,5 @@
 import Image from "next/image";
-import * as logo from "../../public/logo.svg";
+import logo from "../../public/logo.svg";
 import Link from "next/link";
 import classNames from "classnames";
 
