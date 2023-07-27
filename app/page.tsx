@@ -1,12 +1,12 @@
 import Carousel from "./components/Carousel";
+import MainLayout from "./components/MainLayout";
 import RootLayout from "./layout";
 
 export default function Homepage() {
   return (
-    <main>
-      <RootLayout>
+    <RootLayout>
+      <MainLayout>
         <Carousel
-          sx="mt-12 mr-auto ml-auto max-h-1/2"
           carouselItems={[
             {
               src: "/forest.jpeg",
@@ -17,7 +17,7 @@ export default function Homepage() {
             { src: "/river.jpeg", head: "Adaptable and Capable" },
           ]}
         />
-      </RootLayout>
-    </main>
+      </MainLayout>
+    </RootLayout>
   );
 }

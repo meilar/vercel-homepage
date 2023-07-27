@@ -8,13 +8,15 @@ type CarouselItem = {
 
 export default function Carousel({
   carouselItems,
-  sx,
 }: {
-  sx?: string;
   carouselItems: CarouselItem[];
 }) {
   return (
-    <div className={classNames("max-w-4xl mx-12 mb-12", sx)}>
+    <div
+      className={classNames(
+        "max-w-4xl mx-12 mb-12 mt-12 mr-auto ml-auto max-h-1/2"
+      )}
+    >
       <div className="snap-mandatory scroll-smooth snap-x overflow-x-auto inline-flex w-full">
         {carouselItems.map((x, i) => {
           return (

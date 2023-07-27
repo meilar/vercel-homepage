@@ -6,8 +6,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Matthew Eilar — Web Developer",
-  description: "Built with Next.js",
+  title: { default: "Matthew Eilar — Web Developer" },
 };
 
 export default function RootLayout({
@@ -18,8 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={classNames(inter.className, "bg-white")}>
-        <RootHeader />
-        <>{children}</>
+        {children}
       </body>
     </html>
   );
