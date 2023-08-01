@@ -1,4 +1,40 @@
-export const skills = [
+export type Skill = {
+  title: string;
+  bullet: string[];
+  type: SkillType;
+};
+
+export enum SkillType {
+  General,
+  Languages,
+  People,
+  Tools,
+}
+
+export type Position = {
+  title: string;
+  startDate: Date | undefined;
+  endDate: Date | undefined;
+  bullets: string[];
+};
+
+export type Job = {
+  name: string;
+  logoUrl: string;
+  startDate: Date | undefined;
+  endDate: Date | undefined;
+  positions: Position[];
+};
+
+export type Education = {
+  name: string;
+  logoUrl: string;
+  description: string;
+  completion: Date;
+  bullets: string[];
+};
+
+export const skills: Skill[] = [
   {
     title: "People Skills",
     bullet: [
@@ -7,6 +43,7 @@ export const skills = [
       "High EQ developed through experience providing empathetic service to a diverse group of customers, clients, and stakeholders",
       "Experience developing team evaluation metrics, translating desired outcomes into performance indicators",
     ],
+    type: SkillType.People,
   },
   {
     title: "Development Tools",
@@ -16,6 +53,7 @@ export const skills = [
       "Implement automatic unit testing with tools like Jest, MSTest, and Github Actions",
       "VS Code (including Live Share), Atom, Chrome Developer Tools, MySql Workbench, Postman, Linux, Xcode, Beekeeper",
     ],
+    type: SkillType.Tools,
   },
 ];
 

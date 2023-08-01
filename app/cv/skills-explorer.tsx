@@ -1,62 +1,52 @@
 "use client";
 
-import { Transition, Dialog } from "@headlessui/react";
-import { XMarkIcon } from "@heroicons/react/24/outline";
-import { Fragment, useState } from "react";
+import { useState } from "react";
+import { Skill, SkillType, skills } from "./text";
+
+function getBadgeColor(type: SkillType) {
+  switch (type) {
+    case SkillType.People:
+      return "fill-indigo-500";
+    default:
+      return "fill-red-500";
+  }
+}
 
 export default function SkillsExplorer() {
-  const [open, setOpen] = useState(false);
+  const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
   return (
-    <>
-      <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={setOpen}>
-          <div className="fixed inset-0" />
-          <div className="fixed inset-0 overflow-hidden">
-            <div className="absolute inset-0 overflow-hidden">
-              <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
-                <Transition.Child
-                  as={Fragment}
-                  enter="transform transition ease-in-out duration-500 sm:duration-700"
-                  enterFrom="translate-x-full"
-                  enterTo="translate-x-0"
-                  leave="transform transition ease-in-out duration-500 sm:duration-700"
-                  leaveFrom="translate-x-0"
-                  leaveTo="translate-x-full"
+    <div className="grid grid-cols-3">
+      <div className="col-span-2">
+        <div className="py-2 px-4">
+          <h2 className="text-xl font-semibold mb-4">Skills</h2>
+          <div className="flex flex-wrap gap-2">
+            {skills.map((x) => (
+              <span
+                onClick={() => {
+                  setSelectedSkill(x);
+                }}
+                className="inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-inset ring-gray-200 hover:cursor-pointer"
+              >
+                <svg
+                  className={`h-1.5 w-1.5 ${getBadgeColor(x.type)}`}
+                  viewBox="0 0 6 6"
+                  aria-hidden="true"
                 >
-                  <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
-                    <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
-                      <div className="px-4 sm:px-6">
-                        <div className="flex items-start justify-between">
-                          <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
-                            Panel title
-                          </Dialog.Title>
-                          <div className="ml-3 flex h-7 items-center">
-                            <button
-                              type="button"
-                              className="relative rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                              onClick={() => setOpen(false)}
-                            >
-                              <span className="absolute -inset-2.5" />
-                              <span className="sr-only">Close panel</span>
-                              <XMarkIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                        {/* Your content */}
-                      </div>
-                    </div>
-                  </Dialog.Panel>
-                </Transition.Child>
-              </div>
-            </div>
+                  <circle cx={3} cy={3} r={3} />
+                </svg>
+                {x.title}
+              </span>
+            ))}
           </div>
-        </Dialog>
-      </Transition.Root>
-    </>
+        </div>
+      </div>
+      <div className="col-span-1">
+        <ul className="relative mt-6 flex-1 px-4 sm:px-6">
+          {selectedSkill?.bullet.map((x) => (
+            <li className="mt-2 px-4 ml-2 list-disc">{x}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 }

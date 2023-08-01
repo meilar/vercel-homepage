@@ -21,6 +21,7 @@ export default function Carousel({
         {carouselItems.map((x, i) => {
           return (
             <div
+              key={i}
               id={`slide${i}`}
               className="box-content flex flex-none snap-start relative w-full"
             >
