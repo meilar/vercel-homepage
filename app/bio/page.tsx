@@ -24,7 +24,7 @@ export default function BioPage() {
                 alt={"Playing Reader Rabbit on an Apple IIc in 1996"}
               />
               <p className="text-center mt-2 text-sm font-light">
-                In late winter light on Mt. Tabor
+                Playing Reader Rabbit on an Apple IIc in 1996.
               </p>
             </div>
           </div>
