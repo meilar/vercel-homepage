@@ -290,6 +290,80 @@ export const workHistory = [
       },
     ],
   },
+  {
+    name: "Boys & Girls Clubs of Portland",
+    logoUrl: "/bgcp.jpeg",
+    startDate: new Date(2017, 6),
+    endDate: new Date(2021, 11),
+    positions: [
+      {
+        title: "Program Operations Coordinator",
+        startDate: new Date(2016, 11),
+        endDate: new Date(2017, 6),
+        bullets: [
+          "Stewarded program quality initiatives, grant writing and reporting, and fundraising events",
+          "Hired and onboarded program staff",
+          "Participated in an organization-wide DEI process led by Center for Equity and Inclusion",
+        ],
+      },
+      {
+        title: "Coordinator of Membership and Family Engagement",
+        startDate: new Date(2014, 8),
+        endDate: new Date(2016, 11),
+        bullets: [
+          "Developed and led art, music, computer, and cooking after-school and summer programs in East Portland and Camas, WA",
+          "Managed member registration, and payment systems",
+          "Launched an annual art show fundraiser",
+        ],
+      },
+      {
+        title: "Youth Development Professional",
+        startDate: new Date(2013, 8),
+        endDate: new Date(2014, 8),
+        bullets: [
+          "Developed and led art, music, computer, and cooking after-school and summer programs in East Portland and Camas, WA",
+          "Managed member registration, and payment systems",
+          "Launched an annual art show fundraiser",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Reed College Bookstore",
+    logoUrl: "/reed.png",
+    startDate: new Date(2012, 9),
+    endDate: new Date(2013, 4),
+    positions: [
+      {
+        title: "Cashier",
+        startDate: new Date(2012, 9),
+        endDate: new Date(2013, 4),
+        bullets: [
+          "Sales, customer service, online order fulfillment",
+          "Assisted accounts receivable and bookkeeping",
+        ],
+      },
+    ],
+  },
+  {
+    name: "Stream Global Services",
+    logoUrl: "/stream.svg",
+    startDate: new Date(2011, 10),
+    endDate: new Date(2012, 6),
+    positions: [
+      {
+        title: "Customer Service Representative",
+        startDate: new Date(2011, 10),
+        endDate: new Date(2012, 6),
+        bullets: [
+          "Provided technical support for a diverse non-technical customer base",
+          "Billing support, digital media account management",
+          "Remote hardware and software troubleshooting",
+          "Home network troubleshooting.",
+        ],
+      },
+    ],
+  },
 ];
 
 export const educationHistory = [
@@ -312,6 +386,16 @@ export const educationHistory = [
     bullets: [
       "Music coursework in history, music composition, 20th Century Modernism, Minimalism, and Music of the Civil Rights Movement",
       "Other coursework in Spanish language, French language, Chinese humanities, and poetry",
+    ],
+  },
+  {
+    name: "The Thacher School",
+    logoUrl: "/thacher.png",
+    description: "H.S. Diploma",
+    completion: new Date(2008, 5),
+    bullets: [
+      "Yearbook editor",
+      "Represented school at 2007 National Association of Independent School's People of Color Conference",
     ],
   },
 ];

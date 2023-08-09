@@ -19,8 +19,6 @@ export default function WorkExplorer() {
                 return (
                   <div className="flex-col mt-4">
                     <p>
-                      <span className="text-md font-light">{p.title}</span>
-                      <span className="mx-2">|</span>
                       <span className="font-light">
                         {format(p.startDate, "yyyy")}
                       </span>
@@ -32,6 +30,8 @@ export default function WorkExplorer() {
                       ) : (
                         <span>present</span>
                       )}
+                      <span className="mx-2">|</span>
+                      <span className="text-md italic">{p.title}</span>
                     </p>
                     {p.bullets.map((b) => {
                       return (
