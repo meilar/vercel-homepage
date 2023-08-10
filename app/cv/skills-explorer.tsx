@@ -43,7 +43,10 @@ export default function SkillsExplorer() {
   useEffect(() => {}, [selectedType]);
 
   return (
-    <div className="grid grid-cols-3">
+    <div
+      className="sm:grid sm:grid-cols-3"
+      onMouseLeave={() => setSelectedSkill(null)}
+    >
       <div className="col-span-2">
         <div className="py-2 px-4">
           <div className="my-12 flex flex-wrap">
@@ -93,32 +96,54 @@ export default function SkillsExplorer() {
               Show All
             </button>
           </div>
-
+          <p className="my-4 sm:hidden">Tap the skill below for more details</p>
           <div className="flex flex-wrap gap-2">
             {skillList.map((x) => (
-              <span
-                key={x.title}
-                onMouseEnter={() => {
-                  setSelectedSkill(x);
-                }}
-                className="inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-md font-medium text-gray-900 ring-1 ring-inset ring-gray-200 hover:cursor-pointer"
-              >
-                <svg
-                  className={`h-1.5 w-1.5 ${
-                    displayTypes.find((z) => z.type === x.type)?.fill
-                  }`}
-                  viewBox="0 0 6 6"
-                  aria-hidden="true"
+              <>
+                <span
+                  key={x.title + "sm"}
+                  onClick={() => {
+                    setSelectedSkill(x);
+                  }}
+                  className="sm:hidden inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-md font-medium text-gray-900 ring-1 ring-inset ring-gray-200 hover:cursor-pointer"
                 >
-                  <circle cx={3} cy={3} r={3} />
-                </svg>
-                {x.title}
-              </span>
+                  <svg
+                    className={`h-1.5 w-1.5 ${
+                      displayTypes.find((z) => z.type === x.type)?.fill
+                    }`}
+                    viewBox="0 0 6 6"
+                    aria-hidden="true"
+                  >
+                    <circle cx={3} cy={3} r={3} />
+                  </svg>
+                  {x.title}
+                </span>
+                <span
+                  key={x.title}
+                  onMouseEnter={() => {
+                    setSelectedSkill(x);
+                  }}
+                  className="hidden sm:inline-flex items-center gap-x-1.5 rounded-md px-2 py-1 text-md font-medium text-gray-900 ring-1 ring-inset ring-gray-200 hover:cursor-pointer"
+                >
+                  <svg
+                    className={`h-1.5 w-1.5 ${
+                      displayTypes.find((z) => z.type === x.type)?.fill
+                    }`}
+                    viewBox="0 0 6 6"
+                    aria-hidden="true"
+                  >
+                    <circle cx={3} cy={3} r={3} />
+                  </svg>
+                  {x.title}
+                </span>
+              </>
             ))}
           </div>
         </div>
       </div>
       <Transition
+        className={"my-8"}
+        key="large"
         enter="transition-opacity duration-700"
         enterFrom="opacity-0"
         enterTo="opacity-100"
@@ -129,7 +154,7 @@ export default function SkillsExplorer() {
       >
         <div
           className={classNames(
-            "bg-blue-100 rounded-lg p-8 shadow-md",
+            "bg-blue-100 rounded-lg shadow-md p-2 sm:mx-0 mx-2 sticky top-36",
             selectedSkill ? "" : "hidden"
           )}
         >
@@ -138,11 +163,11 @@ export default function SkillsExplorer() {
               (classNames(
                 displayTypes.find((t) => t.type === selectedSkill?.type)?.bg
               ),
-              "relative mt-6 flex-1 px-4 sm:px-6")
+              "relative flex-1 px-1 sm:px-2")
             }
           >
             {selectedSkill?.bullet.map((x) => (
-              <li key={x} className="mt-2 px-4 ml-2 list-disc">
+              <li key={x} className="">
                 {x}
               </li>
             ))}
