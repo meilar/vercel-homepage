@@ -1,4 +1,8 @@
+"use client";
+
 import classNames from "classnames";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 type CarouselItem = {
   src: string;
