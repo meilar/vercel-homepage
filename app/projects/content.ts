@@ -1,7 +1,7 @@
 const robogerMd =
-  "This prompt was called Mr. Roboger’s Neighborhood. The challenge was to take a number from user input, and return to that user all the numbers from 0 to the user input number, with some numbers substituted with words based on the presence of certain digits in the numbers. I had a really fun time working on the CSS styling of this project.";
+  "This challenge was to take a number from user input, and return to that user all the numbers from 0 to the user input number, with some numbers substituted with words based on the presence of certain digits in the numbers. I had a really fun time working on the CSS styling of this project.";
 
-const itosMd = "Lorem Imps";
+const itosMd = "itOS was a project for the managed IT services industry. I was a part of a 3 person development team building the app on a Next.js + TailwindUI + Planetscale stack. By combining so many code-first and SaaS products, our team was able to build out an alpha version of the application in just a few months. Our product integrated with Microsoft Azure services and featured many integrations with Jira, Microsoft Graph, Sendgrid, and Twilio APIs.";
 
 const aviciiMd =
   "This challenge was to build a website that allows a user to customer and calculates the price for that pizza. I used it as an opportunity to pay tribute to the late musician Avicii and the beloved mediocre Southern California pizza chain Ameci's Pizza.";

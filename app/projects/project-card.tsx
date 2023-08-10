@@ -19,7 +19,7 @@ export default function ProjectCard({
       <div className="max-w-3xl rounded overflow-hidden shadow-lg">
         <div className="relative">
           <img className="w-full max-w-5xl" src={image} alt={imgAlt} />
-          <p className="absolute top-4 right-4  text-black text-2xl font-bold bg-yellow-400 rounded-full w-24 h-24 justify-center align-middle text-center items-center flex">
+          <p className="absolute top-4 right-4  text-black text-2xl font-bold bg-yellow-400 opacity-70  rounded-full w-24 h-24 justify-center align-middle text-center items-center flex">
             {format(date, "yyyy")}
           </p>
         </div>

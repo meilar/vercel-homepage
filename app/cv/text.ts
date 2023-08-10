@@ -41,203 +41,194 @@ export const skills: Skill[] = [
   {
     title: "Writing",
     bullet: [
-      "Experienced drafting copy and communications for high-visibilty channels",
+      "I have really great writing skills—ask me about my teachers sometime. I have prepared high-visibility communications, like board reports and executive communications.",
     ],
     type: SkillType.General,
   },
   {
     title: "Mentorship",
     bullet: [
-      "Contributes and provides guidance for the growth of people on my teams",
-      "Experienced and trained mentor for youth services programs",
+      "I have a deep personal commitment to being a growth factor for the people on my team. I can be extremely competitive, but I balance that out by making sure that as I experience success I am helping the people on my team be successful too.",
     ],
     type: SkillType.People,
   },
   {
     title: "Training",
     bullet: [
-      "Developed experience as a trainer delivering basic workplace training",
-      "Responsible for delivering and assessing volunteer training",
+      "In my program operations and volunteer coordinator positions I grew comfortable developing and presenting training presentations.",
     ],
     type: SkillType.People,
   },
   {
     title: "Assessment and Process Improvement",
     bullet: [
-      "Trained in qualitative assessment methods",
-      "Experience defining KPIs, designing assessments to fit outcome measurements, processing survey data, and sythesizing process improvement recommendations",
+      "I participated in a year-long professional development training in quantitative evaluation led by Dialogues in Action. I learned how to prepare evaluation metrics, design assessment protocols, and collate data.",
     ],
     type: SkillType.General,
   },
   {
-    title: "Culturally Responsive Customer Service",
-    bullet: [
-      "High EQ developed through experience providing empathetic service to a diverse group of customers, clients, and stakeholders",
-    ],
-    type: SkillType.People,
-  },
-  {
-    title: "VS Code",
-    bullet: ["VS Code (including Live Share)"],
+    title: "IDE",
+    bullet: ["I have used Xcode, Atom, and VSCode"],
     type: SkillType.Tools,
   },
   {
     title: "Postman",
     bullet: [
-      "VS Code (including Live Share), Atom, Chrome Developer Tools, MySql Workbench, Postman, Linux, Xcode, Beekeeper",
+      "I have used Postman to make test API calls and to set up automated endpoint testing",
     ],
     type: SkillType.Tools,
   },
   {
     title: "Chrome Developer Tools",
-    bullet: ["Chrome Developer Tools"],
+    bullet: [
+      "I am always learning new ways to take advantage of Developer tools. I am very comfortable using the DOM inspector and source tabs, and I have explored some of the more advanced testing and process recording features",
+    ],
     type: SkillType.Tools,
   },
   {
     title: "Xcode",
-    bullet: ["Xcode"],
+    bullet: [
+      "I am many years away from claiming to 'understand Xcode' but I can create and build a sample project",
+    ],
     type: SkillType.Tools,
   },
   {
     title: "Git/Github",
-    bullet: ["Use Github and Git CLI to manage version control"],
+    bullet: [
+      "I am very comfortable using the Github CLI and web interface to manage version control, submit pull requests, and resolve conflicts",
+    ],
     type: SkillType.Tools,
   },
   {
     title: "Beekeeper/MySQL Workbench",
-    bullet: ["Use software to inspect and make database queries"],
+    bullet: [
+      "I have used Beekeeper and MySQL Workbench to manage database migrations, make manual SQL queries, and inspect data",
+    ],
     type: SkillType.Tools,
-  },
-
-  {
-    title: "Version Control",
-    bullet: ["Use software to inspect and make database queries"],
-    type: SkillType.Concepts,
   },
   {
     title: "Test-Driven Development",
-    bullet: ["Use software to inspect and make database queries"],
-    type: SkillType.Concepts,
-  },
-  {
-    title: "JavaScript/Typescript",
-    bullet: ["Use software to inspect and make database queries"],
-    type: SkillType.Languages,
-  },
-  {
-    title: "C#/.NET",
-    bullet: ["Use software to inspect and make database queries"],
-    type: SkillType.Languages,
-  },
-  {
-    title: "Swift",
-    bullet: ["Use software to inspect and make database queries"],
-    type: SkillType.Languages,
-  },
-  {
-    title: "Shell Scripting",
-    bullet: ["Use software to inspect and make database queries"],
-    type: SkillType.Languages,
-  },
-  {
-    title: "Programming Fundamentals",
     bullet: [
-      "Manipulate building blocks of code, including variables, functions, loops, control structures, and branching logic",
-      "Compare constraints and advantages of different programming paradigms, including declarative, imperative, functional, and object-oriented",
+      "I have practiced using test-driven development to complete practice projects. After a year of developing a new product, I have opinions about that development approach that I'd be happy to share with you.",
     ],
     type: SkillType.Concepts,
   },
   {
+    title: "JavaScript/Typescript",
+    bullet: [
+      "When I'm working in C#, I try to use .map() before remembering the syntax to a foreach loop. When I am working in Swift, I get compiler errors because I automatically try to use .toString(). I have forgotten how to write Vanilla JS without Typescript annotations. If you're looking for a Typescript engineer, I'm your guy.",
+    ],
+    type: SkillType.Languages,
+  },
+  {
+    title: "C#/.NET",
+    bullet: [
+      "I have used these tools to create command line apps, backend functions, and webpages with the Blazor templating system",
+    ],
+    type: SkillType.Languages,
+  },
+  {
+    title: "Swift",
+    bullet: [
+      "I have beginner level Swift and SwiftUI skills, very interested in developing them further",
+    ],
+    type: SkillType.Languages,
+  },
+  {
+    title: "Zsh/Shell Scripting",
+    bullet: [
+      "I am very comfortable using command line tools for various tasks and to update software",
+    ],
+    type: SkillType.Languages,
+  },
+  {
     title: "Design Patterns",
-    bullet: ["Use software to inspect and make database queries"],
+    bullet: [
+      "I am continuing to learn new design patterns and how to implement them in future projects",
+    ],
     type: SkillType.Concepts,
   },
   {
-    title: "API Design",
-    bullet: ["Use software to inspect and make database queries"],
+    title: "APIs",
+    bullet: [
+      "I am comfortable designing functions to make REST API calls, and designing endpoint routes following REST conventions",
+    ],
     type: SkillType.Concepts,
   },
   {
     title: "Programming Paradigms",
     bullet: [
-      "Compare constraints and advantages of different programming paradigms, including declarative, imperative, functional, and object-oriented",
+      "I have a journeymans level of understanding of the different programming paradigms, including declarative, imperative, functional, and object-oriented. I have some understanding of their tradeoffs, strengths, and limitations.",
     ],
     type: SkillType.Concepts,
   },
   {
     title: "Problem Solving",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I am very persistent at problem solving. I learn new skills through example code, tutorials and by reading reference documentation",
     ],
     type: SkillType.Concepts,
   },
   {
     title: "HTML",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I have a good understanding of HTML, tags, tag properties, the DOM, and various HTML rendering strategies used by front-end frameworks",
     ],
     type: SkillType.Web,
   },
   {
     title: "CSS",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
-    ],
-    type: SkillType.Web,
-  },
-  {
-    title: "DOM Manipulation",
-    bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I have a good understanding of applying styling through CSS rules, CSS properties, working with various size units, class scoping, and conditional rules",
     ],
     type: SkillType.Web,
   },
   {
     title: "React",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I am experienced user of React to create webpages and components. I can implement React hooks and packages that extend hooks. I understand React's declarative paradigm, the component life cycle, how to decompose a page into components, and various data loading strategies",
     ],
     type: SkillType.Web,
   },
   {
     title: "Bootstrap",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "Btn btn, who's got the btn? I used Bootstrap to style pages extensively in my bootcamp.",
     ],
     type: SkillType.Web,
   },
   {
     title: "Tailwind",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I have used Tailwind extensively in my most recent job, I can style pages extremely quickly, including strategies for great looking mobile-responsive components.",
     ],
     type: SkillType.Web,
   },
   {
     title: "State Management",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I have used React hooks to manage local state, as well as Redux and ORMs (Entity and Prisma) to manage state across sessions",
     ],
     type: SkillType.Concepts,
   },
   {
-    title: "Code-first Database Management",
+    title: "Code-first Database",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I have used Planetscale extensively, which takes a code-first approach to databases, schema management, and migration management",
     ],
     type: SkillType.Concepts,
   },
   {
     title: "Linux",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I can get my way around a Linux system. Let's say... skilled enough to install whatever software I need with Flatpak, not skilled enough to fix a missing sound driver",
     ],
     type: SkillType.Deployment,
   },
   {
     title: "OAuth",
     bullet: [
-      "Learn new skills through example code, tutorials and by reading reference documentation",
+      "I have implemented and maintained OAuth integrations with Microsoft Azure and Google Firebase",
     ],
     type: SkillType.Deployment,
   },
@@ -283,9 +274,9 @@ export const workHistory = [
         startDate: new Date(2017, 7),
         endDate: new Date(2020, 3),
         bullets: [
-          "Executed a pivot from all in-person concerts to all digital concerts during 2020-21 Season",
-          "Opened a dedicated livestream studio",
-          "Associate Producer and Editor for 12 digital concerts for PBO and other music organizations",
+          "Managed box office, volunteers, and front of house at 26 live concerts per season",
+          "Supervised renewal campaigns, mail, and all CRM data for marketing and funders",
+          "Implemented ticket sales platform and donor database migration leading to a significant increase in online sales and individual giving",
         ],
       },
     ],
@@ -311,7 +302,7 @@ export const workHistory = [
         startDate: new Date(2014, 8),
         endDate: new Date(2016, 11),
         bullets: [
-          "Developed and led art, music, computer, and cooking after-school and summer programs in East Portland and Camas, WA",
+          "Developed and led art, music, computer, and cooking after-school and summer programs in Camas, WA",
           "Managed member registration, and payment systems",
           "Launched an annual art show fundraiser",
         ],
@@ -321,9 +312,7 @@ export const workHistory = [
         startDate: new Date(2013, 8),
         endDate: new Date(2014, 8),
         bullets: [
-          "Developed and led art, music, computer, and cooking after-school and summer programs in East Portland and Camas, WA",
-          "Managed member registration, and payment systems",
-          "Launched an annual art show fundraiser",
+          "Led after-school programs in the Reynolds and David Douglas school districts",
         ],
       },
     ],
