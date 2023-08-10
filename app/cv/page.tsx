@@ -9,7 +9,7 @@ import { BuildingLibraryIcon } from "@heroicons/react/24/solid";
 export default function CvPage() {
   return (
     <RootLayout>
-      <MainLayout>
+      <MainLayout slug="/cv">
         <PageHeader
           header={"Curriculum Vitae"}
           description={

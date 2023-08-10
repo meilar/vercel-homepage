@@ -6,7 +6,7 @@ import RootLayout from "../layout";
 export default function BioPage() {
   return (
     <RootLayout>
-      <MainLayout>
+      <MainLayout slug="/bio">
         <PageHeader
           primary="bg-lime-300"
           secondary="bg-pink-300"

@@ -21,7 +21,7 @@ const navLinks = [
   // },
 ];
 
-export default function RootHeader() {
+export default function RootHeader({ slug }: { slug?: string }) {
   return (
     <div className="py-8 px-4">
       <div className="flex flex-col sm:flex-row justify-start items-center gap-8">
@@ -36,7 +36,6 @@ export default function RootHeader() {
           />
         </div>
         <div>
-          {" "}
           <Link
             className={classNames(
               "text-2xl hover:text-purple-600 font-semibold"
@@ -50,7 +49,10 @@ export default function RootHeader() {
           {navLinks.map((x) => {
             return (
               <Link
-                className={classNames("text-lg hover:text-purple-600")}
+                className={classNames(
+                  "text-lg hover:text-purple-600 underline-offset-4  hover:underline",
+                  x.page === slug ? "underline" : ""
+                )}
                 href={x.page}
               >
                 {x.displayText}

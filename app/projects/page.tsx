@@ -8,7 +8,7 @@ import { BeakerIcon } from "@heroicons/react/24/solid";
 export default function Page() {
   return (
     <RootLayout>
-      <MainLayout>
+      <MainLayout slug="/projects">
         <PageHeader
           primary="bg-teal-300"
           secondary="bg-yellow-300"
