@@ -4,7 +4,7 @@ import { educationHistory } from "./text";
 export default function EdExplorer() {
   return (
     <div className="flex flex-col">
-      <h1 className="text-xl my-8 font-semibold">Education</h1>
+      <h1 className="text-4xl my-8 font-semibold">Education</h1>
       {educationHistory.map((e) => {
         return (
           <div className="grid grid-cols-3 my-4">

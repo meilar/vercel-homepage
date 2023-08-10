@@ -46,7 +46,6 @@ export default function SkillsExplorer() {
     <div className="grid grid-cols-3">
       <div className="col-span-2">
         <div className="py-2 px-4">
-          <h2 className="text-xl font-semibold mb-4">Skills</h2>
           <div className="my-12 flex flex-wrap">
             {displayTypes.map((type) => (
               <div

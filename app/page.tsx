@@ -1,4 +1,4 @@
-import Carousel from "./components/Carousel";
+import Image from "next/image";
 import MainLayout from "./components/MainLayout";
 import RootLayout from "./layout";
 
@@ -6,7 +6,17 @@ export default function Homepage() {
   return (
     <RootLayout>
       <MainLayout>
-        <Carousel
+        <div className="bg-orange-400 p-4 rounded-lg shadow-xl">
+          <Image
+            height={1640}
+            width={2360}
+            className="w-full h-full"
+            src={"/homepage.jpeg"}
+            alt={""}
+          />
+        </div>
+
+        {/* <Carousel
           carouselItems={[
             {
               src: "/forest.jpeg",
@@ -16,7 +26,7 @@ export default function Homepage() {
             { src: "/avocado.jpeg", head: "High-Caliber People Skills" },
             { src: "/river.jpeg", head: "Adaptable and Capable" },
           ]}
-        />
+        /> */}
       </MainLayout>
     </RootLayout>
   );

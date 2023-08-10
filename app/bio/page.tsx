@@ -10,10 +10,10 @@ export default function BioPage() {
         <PageHeader
           primary="bg-lime-300"
           secondary="bg-pink-300"
-          iconColor="text-lime-300"
+          iconColor="text-lime-500"
           header={"About Me"}
           description={"Explore some of my favorite projects"}
-          icon={<UserIcon className="h-12 w-12" />}
+          icon={<UserIcon className="md:h-12 md:w-12 h-8 w-8" />}
         />
         <div className="max-w-3xl mt-8 mr-auto ml-auto grid grid-cols-2">
           <div className="col-span-1">

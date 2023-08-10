@@ -8,9 +8,9 @@ export default function MainLayout({
 }) {
   return (
     <>
-      <div className="max-w-5xl mx-auto">
+      <div className="md:max-w-5xl mx-auto w-full">
         <RootHeader />
-        <div className="max-w-3xl mx-auto">{children}</div>
+        <div className="px-4 md:max-w-3xl md:mx-auto">{children}</div>
       </div>
       <Footer />
     </>

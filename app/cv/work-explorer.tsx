@@ -4,7 +4,7 @@ import { workHistory } from "./text";
 export default function WorkExplorer() {
   return (
     <div className="flex flex-col">
-      <h1 className="text-xl my-8 font-semibold">Work History</h1>
+      <h1 className="text-4xl my-8 font-semibold">Work</h1>
       {workHistory.map((h) => {
         return (
           <div className="grid grid-cols-3 my-4">

@@ -23,32 +23,41 @@ const navLinks = [
 
 export default function RootHeader() {
   return (
-    <div className="py-8">
-      <div className="flex flex-row justify-start items-center gap-8">
-        <Image
-          priority
-          style={{ width: 128, height: 128 }}
-          width={128}
-          height={128}
-          src={"/logo.svg"}
-          alt={""}
-        />
-        <Link
-          className={classNames("text-2xl hover:text-purple-600 font-semibold")}
-          href={"/"}
-        >
-          Matthew Eilar
-        </Link>
-        {navLinks.map((x) => {
-          return (
-            <Link
-              className={classNames("text-lg hover:text-purple-600")}
-              href={x.page}
-            >
-              {x.displayText}
-            </Link>
-          );
-        })}
+    <div className="py-8 px-4">
+      <div className="flex flex-col sm:flex-row justify-start items-center gap-8">
+        <div>
+          <Image
+            priority
+            style={{ width: 128, height: 128 }}
+            width={128}
+            height={128}
+            src={"/logo.svg"}
+            alt={""}
+          />
+        </div>
+        <div>
+          {" "}
+          <Link
+            className={classNames(
+              "text-2xl hover:text-purple-600 font-semibold"
+            )}
+            href={"/"}
+          >
+            Matthew Eilar
+          </Link>
+        </div>
+        <div className="flex flex-row space-x-4">
+          {navLinks.map((x) => {
+            return (
+              <Link
+                className={classNames("text-lg hover:text-purple-600")}
+                href={x.page}
+              >
+                {x.displayText}
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
