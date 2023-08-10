@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Skill, SkillType, displayTypes, skills } from "./text";
 import classNames from "classnames";
+import { Transition } from "@headlessui/react";
 
 export default function SkillsExplorer() {
   const allTypes = displayTypes.map((d) => d.type);
@@ -118,27 +119,37 @@ export default function SkillsExplorer() {
           </div>
         </div>
       </div>
-      <div
-        className={classNames(
-          "bg-blue-100 rounded-lg p-8 shadow-md",
-          selectedSkill ? "" : "hidden"
-        )}
+      <Transition
+        enter="transition-opacity duration-700"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-1000"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+        show={selectedSkill ? true : false}
       >
-        <ul
-          className={
-            (classNames(
-              displayTypes.find((t) => t.type === selectedSkill?.type)?.bg
-            ),
-            "relative mt-6 flex-1 px-4 sm:px-6")
-          }
+        <div
+          className={classNames(
+            "bg-blue-100 rounded-lg p-8 shadow-md",
+            selectedSkill ? "" : "hidden"
+          )}
         >
-          {selectedSkill?.bullet.map((x) => (
-            <li key={x} className="mt-2 px-4 ml-2 list-disc">
-              {x}
-            </li>
-          ))}
-        </ul>
-      </div>
+          <ul
+            className={
+              (classNames(
+                displayTypes.find((t) => t.type === selectedSkill?.type)?.bg
+              ),
+              "relative mt-6 flex-1 px-4 sm:px-6")
+            }
+          >
+            {selectedSkill?.bullet.map((x) => (
+              <li key={x} className="mt-2 px-4 ml-2 list-disc">
+                {x}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </Transition>
     </div>
   );
 }

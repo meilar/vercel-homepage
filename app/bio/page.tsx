@@ -1,11 +1,21 @@
+import { UserIcon } from "@heroicons/react/24/solid";
 import MainLayout from "../components/MainLayout";
+import PageHeader from "../components/PageHeader";
 import RootLayout from "../layout";
 
 export default function BioPage() {
   return (
     <RootLayout>
       <MainLayout>
-        <div className="grid grid-cols-2">
+        <PageHeader
+          primary="bg-lime-300"
+          secondary="bg-pink-300"
+          iconColor="text-lime-300"
+          header={"About Me"}
+          description={"Explore some of my favorite projects"}
+          icon={<UserIcon className="h-12 w-12" />}
+        />
+        <div className="max-w-3xl mt-8 mr-auto ml-auto grid grid-cols-2">
           <div className="col-span-1">
             <div className="w-fit">
               <img
@@ -29,9 +39,6 @@ export default function BioPage() {
             </div>
           </div>
           <div className="ml-4 p-4 pt-0 col-span-1">
-            <p className="text-3xl font-semibold mb-2 drop-shadow-xl">
-              About Me
-            </p>
             <p className="mt-4">
               My animating passion is for <strong>exploration</strong> and to
               discover <strong>new connections and patterns</strong> in the

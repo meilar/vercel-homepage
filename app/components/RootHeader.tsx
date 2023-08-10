@@ -15,10 +15,10 @@ const navLinks = [
     displayText: "Projects",
     page: "/projects",
   },
-  {
-    displayText: "Other",
-    page: "/other",
-  },
+  // {
+  //   displayText: "Other",
+  //   page: "/other",
+  // },
 ];
 
 export default function RootHeader() {

@@ -2,6 +2,7 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { Project } from "./content";
 import Link from "next/link";
 import { format } from "date-fns";
+import NavButton from "../components/NavButton";
 
 export default function ProjectCard({
   image,
@@ -10,13 +11,14 @@ export default function ProjectCard({
   summary,
   keywords,
   repoUrl,
+  href,
   date,
 }: Project) {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="z-10 flex justify-center items-center h-screen">
       <div className="max-w-3xl rounded overflow-hidden shadow-lg">
         <div className="relative">
-          <img className="relative w-full max-w-5xl" src={image} alt={imgAlt} />
+          <img className="w-full max-w-5xl" src={image} alt={imgAlt} />
           <p className="absolute top-4 right-4  text-black text-2xl font-bold bg-yellow-400 rounded-full w-24 h-24 justify-center align-middle text-center items-center flex">
             {format(date, "yyyy")}
           </p>
@@ -41,6 +43,11 @@ export default function ProjectCard({
             {<ReactMarkdown children={summary} />}
           </div>
         </div>
+        {href && (
+          <div className="px-6 py-4 flex flex-row-reverse w-full">
+            <NavButton href={href} text={`Read More -->`} />
+          </div>
+        )}
         <div className="px-6 py-4">
           {keywords.map((k) => {
             return (
