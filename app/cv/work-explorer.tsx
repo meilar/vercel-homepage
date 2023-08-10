@@ -7,9 +7,9 @@ export default function WorkExplorer() {
       <h1 className="text-4xl my-8 font-semibold">Work</h1>
       {workHistory.map((h) => {
         return (
-          <div className="grid grid-cols-3 my-4">
-            <div className="col-span-1">
-              <div className="w-36 h-auto">
+          <div className="sm:grid sm:grid-cols-3 my-4">
+            <div className="my-6 md:my-0 col-span-1">
+              <div className="w-36 h-auto mx-auto sm:mx-0">
                 <img src={h.logoUrl} />
               </div>
             </div>

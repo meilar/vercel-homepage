@@ -7,9 +7,9 @@ export default function EdExplorer() {
       <h1 className="text-4xl my-8 font-semibold">Education</h1>
       {educationHistory.map((e) => {
         return (
-          <div className="grid grid-cols-3 my-4">
-            <div className="col-span-1">
-              <div className="w-36 h-auto">
+          <div className="sm:grid sm:grid-cols-3 my-4">
+            <div className="col-span-1 my-8 sm:my-0">
+              <div className="w-36 h-auto mx-auto sm:mx-0">
                 <img src={e.logoUrl} />
               </div>
             </div>
