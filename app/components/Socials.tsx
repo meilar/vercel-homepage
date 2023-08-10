@@ -35,7 +35,7 @@ export default function Socials() {
         return (
           <div
             onClick={() => router.push(s.href)}
-            className="h-8 w-8 hover:cursor-pointer bg-transparent"
+            className="h-8 w-8 hover:cursor-pointer hover:bg-red-500 rounded-full bg-transparent"
           >
             <Image
               className="bg-transparent"

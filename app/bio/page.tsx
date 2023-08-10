@@ -57,18 +57,12 @@ export default function BioPage() {
               <strong>more challenging and stimulating</strong> work.
             </p>
             <p className="mt-4">
-              During the first half of 2022, I went through the{" "}
-              <a href="https://www.epicodus.com">
-                Epicodus Full-Stack Developer bootcamp
-              </a>
-              , in the C#/.Net and React track. This program consists of 20
-              weeks of curriculum and just over a thousand hours with hands on
-              keyboards. The program is modeled on workplaces that use Agile
-              methodology, with development teams, daily standups and
-              reflections, pair programming, and a day-one commitment to good
-              practices like version control, unit testing, and documentation.
-              My completion of the program, after a five week intership, is
-              expected at the end of June, 2022.
+              In the first half of 2022, I completed the{" "}
+              <strong>
+                <a href="https://www.epicodus.com">Epicodus</a>
+              </strong>{" "}
+              Full-Stack bootcamp (C#/.Net/React track). After a successful
+              internship with <strong>itOS</strong>, I was hired to join their small development team prototyping a product for the IT services sector. In the summer of 2023, that project was shut down and I am currently looking for new opportunities.
             </p>
           </div>
         </div>
