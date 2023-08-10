@@ -89,7 +89,7 @@ export default function SkillsExplorer() {
                 setSelectedType(allTypes);
               }}
               className={classNames(
-                `rounded-md mt-4 bg-gray-50 text-gray-500 hover:bg-gray-200 px-2.5 py-1.5 mx-2 text-sm font-semibold shadow-sm`,
+                `mb-1 sm:mb-0 rounded-md mt-4 bg-gray-50 text-gray-500 hover:bg-gray-200 px-2.5 py-1.5 mx-2 text-sm font-semibold shadow-sm`,
                 isFiltered ? "" : "hidden"
               )}
             >
