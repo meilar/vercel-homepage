@@ -399,3 +399,55 @@ export const educationHistory = [
     ],
   },
 ];
+
+export type DisplayType = {
+  type: SkillType;
+  label: string;
+  bg: string;
+  fill: string;
+};
+
+export const displayTypes: DisplayType[] = [
+  {
+    type: SkillType.General,
+    label: "General",
+    bg: "bg-cyan-50 text-cyan-600 hover:bg-cyan-100",
+    fill: "fill-cyan-500",
+  },
+  {
+    type: SkillType.Tools,
+    label: "Tools",
+    bg: "bg-amber-50 text-amber-600 hover:bg-amber-100",
+    fill: "fill-amber-500",
+  },
+  {
+    type: SkillType.People,
+    label: "People",
+    bg: "bg-indigo-50 text-inigo-600 hover:bg-indigo-100",
+    fill: "fill-indigo-500",
+  },
+  {
+    type: SkillType.Languages,
+    label: "Languages",
+    bg: "bg-blue-50 text-blue-600 hover:bg-blue-100",
+    fill: "fill-blue-500",
+  },
+  {
+    type: SkillType.Concepts,
+    label: "Concepts",
+    bg: "bg-fuchsia-50 text-fuchsia-600 hover:bg-fuchsia-100",
+    fill: "fill-fuchsia-500",
+  },
+  {
+    type: SkillType.Web,
+    label: "Web",
+    bg: "bg-lime-50 text-lime-600 hover:bg-lime-100",
+    fill: "fill-lime-500",
+  },
+  {
+    type: SkillType.Deployment,
+    label: "Deployment",
+    bg: "bg-red-50 text-red-600 hover:bg-red-100",
+    fill: "fill-red-500",
+  },
+];

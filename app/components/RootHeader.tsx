@@ -25,7 +25,14 @@ export default function RootHeader() {
   return (
     <div className="py-8">
       <div className="flex flex-row justify-start items-center gap-8">
-        <Image height={128} width={128} src={"/logo.svg"} alt={""} />
+        <Image
+          priority
+          style={{ width: 128, height: 128 }}
+          width={128}
+          height={128}
+          src={"/logo.svg"}
+          alt={""}
+        />
         <Link
           className={classNames("text-2xl hover:text-purple-600 font-semibold")}
           href={"/"}
