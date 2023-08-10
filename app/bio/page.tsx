@@ -12,10 +12,10 @@ export default function BioPage() {
           secondary="bg-pink-300"
           iconColor="text-lime-500"
           header={"About Me"}
-          description={"Explore some of my favorite projects"}
+          description={"Here's what makes me tick"}
           icon={<UserIcon className="md:h-12 md:w-12 h-8 w-8" />}
         />
-        <div className="max-w-3xl mt-8 mr-auto ml-auto grid grid-cols-2">
+        <div className="max-w-3xl mt-8 mr-auto ml-auto md:grid md:grid-cols-2">
           <div className="col-span-1">
             <div className="w-fit">
               <img

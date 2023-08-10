@@ -15,7 +15,7 @@ export default function ProjectCard({
   date,
 }: Project) {
   return (
-    <div className="z-10 flex justify-center items-center h-screen">
+    <div className="z-10 flex justify-center items-center">
       <div className="max-w-3xl rounded overflow-hidden shadow-lg">
         <div className="relative">
           <img className="w-full max-w-5xl" src={image} alt={imgAlt} />

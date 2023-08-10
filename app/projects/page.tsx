@@ -17,7 +17,7 @@ export default function Page() {
           description={"Explore some of my favorite projects"}
           icon={<BeakerIcon className="h-12 w-12" />}
         />
-        <div>
+        <div className="flex flex-col space-y-24 mt-12">
           {projects.map((project) => {
             return <ProjectCard {...project} />;
           })}
