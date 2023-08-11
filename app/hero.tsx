@@ -11,10 +11,11 @@ export default function Hero() {
       className="bg-orange-400 p-4 rounded-lg shadow-xl hover:bg-fuchsia-400 hover:cursor-pointer"
     >
       <Image
+        priority
         height={1640}
         width={2360}
         className="w-full h-full"
-        src={"/homepage.jpeg"}
+        src={"/homepage-scaled.jpeg"}
         alt={"Homepage illustration"}
       />
     </div>
