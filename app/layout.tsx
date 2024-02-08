@@ -15,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={classNames(inter.className, "bg-white w-full h-full")}>
+      <body
+        className={classNames(
+          inter.className,
+          "bg-white min-w-screen min-h-screen"
+        )}
+      >
         {children}
       </body>
     </html>
